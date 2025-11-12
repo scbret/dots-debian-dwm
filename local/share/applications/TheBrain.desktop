@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.5
+Type=Application
+Name=TheBrain
+Comment=TheBrain web app
+TryExec=chromium
+Exec=chromium --password-store=basic --new-window --ozone-platform=x11 --app=https://app.thebrain.com/brains/ --class=TheBrain
+Terminal=false
+Icon=/home/steve/.local/share/applications/icons/Brain.png
+StartupNotify=true
+StartupWMClass=TheBrain
+Categories=Network;Office;
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.5
+Name=YouTube
+Comment=YouTube
+TryExec=chromium
+Exec=chromium --password-store=basic --new-window --ozone-platform=x11 --app=https://youtube.com/
+Terminal=false
+Type=Application
+Icon=/home/steve/.local/share/applications/icons/YouTube.png
+StartupNotify=true
+StartupWMClass=YouTube

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=VW
+Comment=Open Vimwiki index in Neovim
+Exec=/bin/sh -lc '~/.scripts/vimwiki-app.sh'
+Icon=nvim
+Terminal=false
+Categories=Utility;TextEditor;
+StartupWMClass=VW
+

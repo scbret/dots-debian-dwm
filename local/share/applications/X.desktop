@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.5
+Name=X
+Comment=X
+TryExec=chromium
+Exec=chromium --password-store=basic --new-window --ozone-platform=x11 --app=https://x.com/
+Terminal=false
+Type=Application
+Icon=/home/steve/.local/share/applications/icons/X.png
+StartupNotify=true
+StartupWMClass=X

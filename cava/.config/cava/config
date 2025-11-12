@@ -1,0 +1,10 @@
+[input]
+method = pulse
+source = auto
+
+[output]
+method = ncurses
+bars = 64
+framerate = 30
+channels = mono
+

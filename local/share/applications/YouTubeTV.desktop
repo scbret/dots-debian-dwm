@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.5
+Type=Application
+Name=YouTubeTV
+Comment=YouTubeTV
+TryExec=chromium
+Exec=chromium --password-store=basic --new-window --ozone-platform=x11 --app=https://tv.youtube.com/ --class=YouTubeTV
+Terminal=false
+Type=Application
+Icon=/home/steve/.local/share/applications/icons/YouTube.png
+StartupNotify=true
+StartupWMClass=YouTubeTV

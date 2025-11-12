@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=RMPC
+Comment=Open rmpc in kitty
+Exec=/bin/sh -lc '~/.scripts/rmpc-app.sh'
+Icon=kitty
+Terminal=false
+Categories=Utility;TextEditor;
+StartupWMClass=RMPC
+

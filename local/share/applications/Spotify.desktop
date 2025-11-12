@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.5
+Type=Application
+Name=Spotify
+Comment=Spotify
+TryExec=chromium
+Exec=chromium --password-store=basic --new-window --ozone-platform=x11 --app=https://open.spotify.com/ --class=Spotify
+Terminal=false
+Type=Application
+Icon=/home/steve/.local/share/applications/icons/spotify.jpg
+StartupNotify=true
+StartupWMClass=Spotify
