@@ -122,3 +122,4 @@ fi
 #if [ -f "$HOME/.bashrc.local" ]; then
 #    . "$HOME/.bashrc.local"
 #fi
+. "$HOME/.cargo/env"
