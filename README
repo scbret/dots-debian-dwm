@@ -1,2 +1,7 @@
 # Dotfiles for Debian - DWM
 
+- Do not use stow with mpd
+  - copy it to the ~/.config folder
+- RMPC is ok to use stow with
+
+
