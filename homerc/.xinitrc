@@ -26,12 +26,16 @@ export XDG_DATA_DIRS="${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
 # 💡 DO NOT manually start gvfs daemons; they autostart via D-Bus
 # (Remove any /usr/libexec/gvfsd lines)
 
+# Start the keyring daemon and export the variables it generates
+eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 # reload previous color scheme
 wal -Rn &
 
 # Display setup
-xrandr --output eDP-1 --primary --mode 1536x1024 --pos 0x0 --rotate normal
+xrandr --output eDP-1 --primary --mode 2048x1152 --pos 0x0 --rotate normal
 
 # Wrap the WM in a D-Bus session (preferred over ad-hoc dbus-launch)
-exec dbus-run-session -- dwm
-
+#exec dbus-run-session -- dwm
+exec dbus-launch --exit-with-session dwm

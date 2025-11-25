@@ -4,7 +4,8 @@
 
 # Launch Browser (Firefox-esr)
 super + b
-    ~/Applications/HeliumBrowser.AppImage
+     ~/.local/bin/helium
+#    ~/Applications/HeliumBrowser.AppImage
     
 # Launch Private Browser (Firefox Incognito Mode)
 super + shift + b

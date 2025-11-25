@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Helium Browser
+Comment=Privacy-focused Chromium-based web browser
+GenericName=Web Browser
+Keywords=Internet;WWW;Browser;Web;Explorer
+Exec=/home/steve/Applications/HeliumBrowser.AppImage --password-store=basic %u
+Terminal=false
+Type=Application
+Icon=web-browser
+Categories=Network;WebBrowser;
+StartupNotify=true
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;video/webm;application/x-xpinstall;

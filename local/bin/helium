@@ -1,0 +1,3 @@
+#!/bin/sh
+# Replace with the actual path to your AppImage
+/home/steve/Applications/HeliumBrowser.AppImage --password-store=basic "$@"
