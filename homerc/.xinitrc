@@ -36,6 +36,10 @@ wal -Rn &
 # Display setup
 xrandr --output eDP-1 --primary --mode 2048x1152 --pos 0x0 --rotate normal
 
+# screen lock
+xset s 900 600
+xss-lock --transfer-sleep-lock -- slock &
+
 # Wrap the WM in a D-Bus session (preferred over ad-hoc dbus-launch)
 #exec dbus-run-session -- dwm
 exec dbus-launch --exit-with-session dwm
