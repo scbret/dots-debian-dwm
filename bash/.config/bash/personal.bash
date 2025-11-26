@@ -75,6 +75,9 @@ mdn() {
     fi
 }
 
+# change monitor xrandr setup
+alias ds='source /home/steve/.scripts/display_setup.sh'
+
 # dwm mdnotes
 alias mdd='/home/steve/.scripts/md-notes-dwm.sh'
 
