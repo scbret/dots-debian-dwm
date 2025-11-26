@@ -34,7 +34,7 @@ export SSH_AUTH_SOCK
 wal -Rn &
 
 # Display setup
-xrandr --output eDP-1 --primary --mode 2048x1152 --pos 0x0 --rotate normal
+xrandr --output eDP-1 --primary --mode 1536x1024 --pos 0x0 --rotate normal
 
 # screen lock
 xset s 900 600
