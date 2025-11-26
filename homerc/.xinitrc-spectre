@@ -1,0 +1,45 @@
+#!/bin/sh
+# ~/.xinitrc — Debian + DWM
+
+# Source system snippets
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
+
+# ✅ Ensure a real runtime dir (DON'T point this to /tmp)
+# On proper logins, systemd-logind creates /run/user/<uid> for you.
+# This fallback just exports it if your TTY login didn't.
+if [ -z "${XDG_RUNTIME_DIR}" ]; then
+  export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+fi
+mkdir -p "${XDG_RUNTIME_DIR}"
+chmod 700 "${XDG_RUNTIME_DIR}"
+
+# Helpful XDG bits
+export XDG_SESSION_TYPE=x11
+export XDG_CURRENT_DESKTOP=dwm
+export XDG_DATA_DIRS="${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+
+# 💡 DO NOT manually start gvfs daemons; they autostart via D-Bus
+# (Remove any /usr/libexec/gvfsd lines)
+
+# Start the keyring daemon and export the variables it generates
+eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
+# reload previous color scheme
+wal -Rn &
+
+# Display setup
+xrandr --output eDP-1 --primary --mode 2048x1152 --pos 0x0 --rotate normal
+
+# screen lock
+xset s 900 600
+xss-lock --transfer-sleep-lock -- slock &
+
+# Wrap the WM in a D-Bus session (preferred over ad-hoc dbus-launch)
+#exec dbus-run-session -- dwm
+exec dbus-launch --exit-with-session dwm
