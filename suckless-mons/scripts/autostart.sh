@@ -15,7 +15,8 @@ lxpolkit &
 ##feh --bg-scale ~/.config/suckless/wallpaper/wallhaven-3q9vmd_3440x1440.png &
 #feh --bg-scale ~/wallpaper/iconic-boss302.jpg &
 #feh --bg-scale ~/.config/suckless/wallpaper/wallhaven-85erok_3440x1440.png &
-feh --bg-scale ~/wallpaper/pfback-titles.jpg &
+#feh --bg-scale ~/wallpaper/pfback-titles.jpg &
+feh --bg-scale ~/wallpaper/sein-river.jpg &
 
 # sxhkd
 # (re)load sxhkd for keybinds

@@ -115,3 +115,7 @@ super + alt + b
 # Power Off/Reboot
 super + x 
 	~/.config/suckless/scripts/power
+
+# Screen lock
+super + l
+  slock &
